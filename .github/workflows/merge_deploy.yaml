@@ -12,7 +12,7 @@ on:
       - main
 
 jobs:
-  execute-workflow:
+  deploy:
     uses: ./.github/workflows/flex_deploy.yaml
     with:
       # Change inputs below to match your desired configuration
