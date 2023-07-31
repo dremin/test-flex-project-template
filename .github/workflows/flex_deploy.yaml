@@ -6,7 +6,7 @@ on:
     inputs:
       environment:
         required: true
-        type: environment
+        type: string
       deploy_terraform:
         required: true
         type: boolean
