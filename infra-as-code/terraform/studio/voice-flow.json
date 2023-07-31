@@ -38,15 +38,15 @@
         }
       ],
       "properties": {
-        "offset": {
-          "x": 30,
-          "y": 180
-        },
-        "waitUrlMethod": "POST",
         "waitUrl": "https://${SERVERLESS_DOMAIN}/features/callback-and-voicemail/studio/wait-experience?mode=initialize",
+        "offset": {
+          "x": 570,
+          "y": 600
+        },
         "workflow": "${WORKFLOW_SID_ASSIGN_TO_ANYONE}",
         "channel": "${VOICE_CHANNEL_SID}",
-        "attributes": "{ \"type\": \"inbound\", \"name\": \"{{trigger.call.From}}\", \"conversations\": {\"hang_up_by\": \"Customer\"} }"
+        "attributes": "{ \"type\": \"inbound\", \"name\": \"{{trigger.call.From}}\", \"conversations\": {\"hang_up_by\": \"Customer\"} }",
+        "waitUrlMethod": "POST"
       }
     },
     {
