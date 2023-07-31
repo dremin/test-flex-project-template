@@ -9,11 +9,17 @@
           "event": "incomingMessage"
         },
         {
-          "next": "SendCallToAgent",
+          "next": "check_schedule",
           "event": "incomingCall"
         },
         {
+          "event": "incomingConversationMessage"
+        },
+        {
           "event": "incomingRequest"
+        },
+        {
+          "event": "incomingParent"
         }
       ],
       "properties": {
