@@ -104,7 +104,7 @@ jobs:
       TF_VAR_TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
     needs: [perform-initial-serverless-release]
     steps:
-      - uses: actions/checkout@v1 
+      - uses: actions/checkout@v3
       - uses: ./.github/actions/terraform_state_artifact
         with:
           encryptionkey: ${{ secrets.TF_ENCRYPTION_KEY }}
