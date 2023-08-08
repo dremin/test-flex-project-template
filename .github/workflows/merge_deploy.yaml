@@ -18,8 +18,8 @@ jobs:
       # Change inputs below to match your desired configuration
       # Uses the 'production' env when pushing to the main branch, or 'dev' env when pushing to the develop branch
       environment: ${{ github.ref_name == 'test-new-workflows' && 'dev' || 'dev-not' }}
-      deploy_terraform: true
-      overwrite_config: false
+      deploy_terraform: false
+      overwrite_config: true
     secrets:
       TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
       TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
